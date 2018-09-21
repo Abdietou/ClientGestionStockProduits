@@ -1,1 +1,10 @@
-<app-produit></app-produit>
+<div class="row">
+    <div class="col-lg-2" *ngIf="showHideSlidesBar">
+        <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-lg-10">
+        <button (click)="showHideSlidesBar = !showHideSlidesBar;">show/Hide</button>
+        <app-navbar></app-navbar>
+        <app-content></app-content>
+    </div>
+</div>
